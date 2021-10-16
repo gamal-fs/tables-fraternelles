@@ -10,19 +10,26 @@ body {
   background-color: #C1666B ;
 }
 
-.nav-link {
-  color: white;
-  font-size: 1.2em;
-}
-.active {
-  color: black;
-}
-
-.nav-link:hover {
-  color: black;
-  font-weight: 700;
-}
-
 .logo {
   border-radius:40px;
+}
+ 
+.btn-custom {
+  background-color: #C1666B;
+  color: white;
+}
+
+.btn-nl {
+  background-color: #676767;
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+}
+
+.btn-nl:hover {
+  background-color: white;
+  color: red;
+  font-weight: bold;
 }
