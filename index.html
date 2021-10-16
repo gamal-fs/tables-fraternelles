@@ -18,53 +18,111 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Modal d'inscription -->
+    <!-- Modal Newsletter -->
+    <div
+      class="modal"
+      id="newsletter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="newsletter"
+      aria-hidden="true"
+      data-backdrop="static"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsletter">S'incrire à la Newsletter</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <p>Les Tables Fraternelles vous envoient des nouvelles tous les mois!</p>
+              <label class="form-label fw-bold" for="name">Prénom</label>
+              <input type="text" id="name" class="form-control" placeholder="votre prénom">
+            </div>
+            <div class="form-group">
+              <label class="form-label mt-3 fw-bold" for="login">Mail</label>
+              <input type="mail" id="login" class="form-control mb-3" placeholder="votre mail">
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label fst-italic fs-8" for="flexCheckDefault">
+                j'accepte de recevoir la Newsletter des Tables Fraternelles
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-custom "type="button" data-dismiss="modal">M'inscrire à la Newsletter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin modal -->
 
     <main class="container-fluid">
       <header>
         <div class="row">
           <div class="col-12 p-0">
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-custom">
-              <a href="index.html" class="navbar-brand"
-                ><img
-                  src="img/logo.jpg"
-                  alt="Logo Tables Fraternelles"
-                  class="logo px-4"
-              /></a>
-              <!-- Bouton menu pour écran portables -->
-              <button 
-                type="button"
-                class="navbar-toggler"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                </svg>
-              </button>
-              <!-- Fin bouton pour responsif -->
-              <!-- Menu de la nav -->
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a href="index.html" aria-current="page" class="nav-link text-decoration-none active">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
-                    </svg>
-                  </a>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link text-decoration-none">A propos</a></li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link text-decoration-none">S'engager</a></li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link text-decoration-none">Actualités</a></li>
-                </ul>
+            <nav class="navbar navbar-dark navbar-expand-lg navbar-custom">
+              <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                  <img
+                    src="img/logo.jpg"
+                    alt="Logo Tables Fraternelles"
+                    class="logo px-4"
+                  />
+                </a>
+                <!-- Bouton menu pour écran portables -->
+                <button 
+                  type="button"
+                  class="navbar-toggler ml-auto"
+                  data-toggle="collapse"
+                  data-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff"
+                  class="bi bi-list" viewbox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                  </svg>
+                </button>
+                <!-- Fin bouton responsif -->
+                <!-- Menu de la nav -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a href="index.html" aria-current="page" class="nav-link active">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                      </svg>
+                    </a>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">A propos</a></li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">S'engager</a></li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Actualités</a></li>
+                  </ul>
+                </div>
                 <!-- Fin menu nav -->
               </div>
+              <!-- Bouton Newsletter -->
+              <div class="container-fluid justify-content-end">
+                <button 
+                  class="btn btn-nl" 
+                  data-toggle="modal" 
+                  data-target="#newsletter"
+                  type="button"
+                >
+                  Gardons le contact
+                </button>
+              </div>
+              <!-- Fin bouton NL -->
             </nav>
           </div>
         </div>
