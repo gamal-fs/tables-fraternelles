@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+/* Général */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* Navigation */
 .navbar-custom {
   background-color: #C1666B ;
 }
@@ -19,22 +21,35 @@ body {
   color: white;
 }
 
+.nav-item:hover {
+  font-size: 1.2em;
+  border-bottom: 1px solid lightgray;
+  background: linear-gradient(#C1666B, lightgray);
+  border-radius: 5px;
+  color: black;
+}
+
+/* Bouton Newsletter */
 .btn-nl:hover {
   background-color: white;
   color: #C1666B;
   font-weight: bold;
 } 
- .carousel-inner {
-   height: 60vh;
- }
-
+ 
+/* Header */
 header {
   background: url("img/convives.png");
   background-size: cover;
-  background-image: top;
-  height: 600px;
-  padding-top: 10%;
-  opacity: 0.95;
+  background-position: top;
+  height: 800px;
+  padding-top: 100px;
+  opacity: 0.90;
+}
+
+.header-p {
+  padding: 0 500px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 header div {
@@ -42,23 +57,63 @@ header div {
   flex-direction: column;
   align-items: center;
   background: rgba(255, 255, 255, 0.5);
-  padding: 20px 0;
-  text-align: center;
-  padding: 40px 10%;
+  padding: 50px 0;
+}
+
+@font-face {
+  font-family: Cassandra;
+  src: url(font/Cassandra\ Personal\ Use.ttf);
 }
 
 header div h1 {
-  font-size: 3em;
+  font-size: 3.5em;
   text-shadow: 1px 1px 5px rgb(250, 250, 250);
-
+  text-decoration: underline;
+  font-family: Cassandra;
+  margin: 20px;
 }
 
 header div p {
   font-size: 1.3em;
   text-shadow: 1px 1px 5px rgb(250, 250, 250);
+  font-weight: bold;
+  margin: 20px 100px;
+
+}
+
+header div button.btn-custom:hover {
+  background: white;
+  color: #C1666B,
+}
+
+/* A propos */
+.apropos-header {
+  margin: 20px 0;
+  text-align: center;
+  background: #EC7B7A;
+  padding: 20px 0;
+  color: white;
+}
+
+.apropos-header h2 {
+  font-size: 2em;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.apropos-main {
+  display: flex;
+}
+
+.apropos-text {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0 25px;
 }
 
 
+
+/* Mobile */
   @media screen and (max-width:700px) {
     .btn-lg {
       font-size: 17px;
