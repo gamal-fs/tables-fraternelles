@@ -26,7 +26,11 @@ body {
   border-bottom: 1px solid lightgray;
   background: linear-gradient(#C1666B, lightgray);
   border-radius: 5px;
-  color: black;
+}
+
+.active {
+  border-bottom: 1px solid whitesmoke;
+
 }
 
 /* Bouton Newsletter */
@@ -89,31 +93,30 @@ header div button.btn-custom:hover {
 }
 
 /* A propos */
-.apropos-header {
+.section-header {
   margin: 20px 0;
   text-align: center;
   background: #EC7B7A;
-  padding: 20px 0;
+  padding: 20px 10px;
   color: white;
-}
+  }
 
-.apropos-header h2 {
+
+.section-header h2 {
   font-size: 2em;
   text-decoration: underline;
   text-transform: uppercase;
 }
 
-.apropos-main {
+.section-main {
   display: flex;
 }
 
-.apropos-text {
+.section-text {
   text-align: center;
   font-size: 1.2em;
   padding: 0 25px;
 }
-
-
 
 /* Mobile */
   @media screen and (max-width:900px) {
@@ -132,8 +135,13 @@ header div button.btn-custom:hover {
       display: inline-block;
     }
 
-    iframe {
-      width: 200;
+    .media {
+      display: flex;
+      justify-content: center;
     }
 
+    #sengager-media {
+      display: none;
+    }
+ 
   }
