@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Les différentes actualités en lien et proposées par les tables Fraternelles."
+    />
+    <title>Les Tables Fraternelles: Actualités</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Modal Newsletter -->
+    <div
+      class="modal"
+      id="newsletter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-newsletter"
+      aria-hidden="true"
+      data-backdrop="static"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-newsletter">
+              S'incrire à la Newsletter
+            </h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <p>
+                Les Tables Fraternelles vous envoient des nouvelles tous les
+                mois!
+              </p>
+              <label class="form-label fw-bold" for="name">Prénom</label>
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="votre prénom"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label mt-3 fw-bold" for="login">Mail</label>
+              <input
+                type="email"
+                id="login"
+                class="form-control mb-3"
+                placeholder="votre mail"
+              />
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label
+                class="form-check-label fst-italic fs-8"
+                for="flexCheckDefault"
+              >
+                j'accepte de recevoir la Newsletter des Tables Fraternelles
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-custom" type="button" data-dismiss="modal">
+              M'inscrire à la Newsletter
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin modal -->
+
+    <main class="container-fluid p-0">
+      <div class="row">
+        <div class="col-12 p-0">
+          <!-- Navbar -->
+          <nav class="navbar navbar-dark navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+              <a href="index.html" class="navbar-brand">
+                <img
+                  src="img/logo.jpg"
+                  alt="Logo Tables Fraternelles"
+                  class="logo px-4"
+                  id="home"
+                />
+              </a>
+              <!-- Bouton menu pour écran portables -->
+              <button
+                type="button"
+                class="navbar-toggler ml-auto"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="#fff"
+                  class="bi bi-list"
+                  viewbox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </button>
+              <!-- Fin bouton responsif -->
+              <!-- Menu de la nav -->
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a
+                      href="index.html"
+                      class="nav-link"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-house-door-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="index.html#apropos" class="nav-link">A propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index.html#sengager" class="nav-link">S'engager</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="actualites.html" class="nav-link active" aria-current="page">Actualités</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Nous contacter</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Fin menu nav -->
+            </div>
+            <!-- Bouton Newsletter -->
+            <div class="container-fluid justify-content-end">
+              <button
+                class="btn btn-secondary btn-lg btn-nl"
+                data-toggle="modal"
+                data-target="#newsletter"
+                type="button"
+              >
+                Newsletter
+              </button>
+            </div>
+            <!-- Fin bouton NL -->
+          </nav>
+        </div>
+      </div>
+      <!-- Fil d'Ariane -->
+      <div class="row">
+        <div class="col-12 bg-light">
+          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+            <ol class="breadcrumb px-2 m-0 bg-light">
+              <li class="breadcrumb-item">
+                <a href="index.html" class="text-dark">Accueil</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="index.html#apropos" class="text-dark">A propos</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="index.html#sengager" class="text-dark">S'engager</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Actualités
+              </li>
+              <li class="breadcrumb-item">
+                <a href="contact.html" class="text-dark">Contact</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- Fin fil d'Ariane -->
+      <!-- Actualités -->
+      <section id="actualites">
+
+      </section>
+    
+      <!-- Footer -->
+      <footer class="mt-4 pt-4 text-center">
+        <div class="mentions-footer">
+          <div class="quick-link">
+            <ul class="list-unstyled">
+              <li class="quick-items"><a href="index.html">Accueil</a></li>
+              <li class="quick-items"><a href="index.html#apropos">A propos</a></li>
+              <li class="quick-items"><a href="index.html#sengager">S'engager</a></li>
+              <li class="quick-items">
+                <a href="actualites.html">Actualités</a>
+              </li>
+              <li class="quick-items">
+                <a href="contact.html">Nous contacter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social-footer">
+            <ul class="list-unstyled">
+              <li class="social-items">
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li class="social-items">
+                <a href="https://twitter.com/?lang=fr" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="social-items">
+                <a href="https://www.instagram.com/?hl=fr" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="legal-footer">
+            <ul class="list-unstyled">
+              <li class="legal-items"><a href="#">Mentions légales</a></li>
+              <li class="legal-items">
+                <a href="#">Politique en matière de cookies</a>
+              </li>
+              <li class="legal-items">
+                <a href="#">Politique de confidentialité</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-0 footer-copyright">
+          Les tables Fraternelles &copy; 2021 - Tous droits réservés - réalisé
+          par Eric LEMOINE
+        </div>
+      </footer>
+      <!-- Fin Footer -->
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
