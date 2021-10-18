@@ -16,7 +16,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Modal Newsletter -->
@@ -25,14 +30,14 @@
       id="newsletter"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="newsletter"
+      aria-labelledby="modal-newsletter"
       aria-hidden="true"
       data-backdrop="static"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="newsletter">
+            <h5 class="modal-title" id="modal-newsletter">
               S'incrire à la Newsletter
             </h5>
             <button
@@ -61,7 +66,7 @@
             <div class="form-group">
               <label class="form-label mt-3 fw-bold" for="login">Mail</label>
               <input
-                type="mail"
+                type="email"
                 id="login"
                 class="form-control mb-3"
                 placeholder="votre mail"
@@ -195,24 +200,16 @@
                 Accueil
               </li>
               <li class="breadcrumb-item">
-                <a href="#apropos" class="text-dark"
-                  >A propos</a
-                >
+                <a href="#apropos" class="text-dark">A propos</a>
               </li>
               <li class="breadcrumb-item">
-                <a href="#sengager" class="text-dark"
-                  >S'engager</a
-                >
+                <a href="#sengager" class="text-dark">S'engager</a>
               </li>
               <li class="breadcrumb-item">
-                <a href="actualites.html" class="text-dark"
-                  >Actualités</a
-                >
+                <a href="actualites.html" class="text-dark">Actualités</a>
               </li>
               <li class="breadcrumb-item">
-                <a href="contact.html" class="text-dark"
-                  >Contact</a
-                >
+                <a href="contact.html" class="text-dark">Contact</a>
               </li>
             </ol>
           </nav>
@@ -225,12 +222,16 @@
           <h1>Les tables Fraternelles</h1>
           <p class="header-p">
             Les tables fraternelles, un concept ancien à remettre au goût du
-            jour. <br> Prévoir une assiette de plus pour l'invité surprise, ouvrir sa
-            table à l'inconnu qui passe. <br> Une tradition ancienne malheureusement
-            disparue. <br> De manière simple,nous pouvons redécouvrir cette
-            enrichissante expérience et recréer du lien social...
+            jour. <br />
+            Prévoir une assiette de plus pour l'invité surprise, ouvrir sa table
+            à l'inconnu qui passe. <br />
+            Une tradition ancienne malheureusement disparue. <br />
+            De manière simple,nous pouvons redécouvrir cette enrichissante
+            expérience et recréer du lien social...
           </p>
-          <a href="contact.html" class="btn btn-custom btn-lg">En savoir plus</a>
+          <a href="contact.html" class="btn btn-custom btn-lg"
+            >En savoir plus</a
+          >
         </div>
       </header>
       <!-- Fin accueil -->
@@ -243,7 +244,7 @@
           <div class="section-text">
             <p>
               Vous faites peut-être partie de ceux qui ont visionné le
-              documentaire Secret d'Histoire de Stéphane Bern sur la vie de
+              documentaire Secret d'Histoire de<br />Stéphane Bern sur la vie de
               Sainte Thérèse de Lisieux en mai 2020 ?<br />
               On y trouve un passage sur une pratique courante à l'époque et qui
               est malheureusement tombée dans l'oubli : la famille Martin avait
@@ -273,7 +274,6 @@
               width="950"
               height="500"
               src="https://player.vimeo.com/video/521525948?h=1029763ad2&title=0&app_id=122963"
-              frameborder="0"
             >
             </iframe>
           </div>
@@ -289,17 +289,20 @@
           <div class="section-text sengager-text">
             <p>
               Chacun à son niveau et selon ses disponibilités peut contribuer à
-              une société plus fraternelle : accueillir le temps d’un repas,
-              tenir le secrétariat, faire la promotion de cette initiative, les
-              possibilités ne manquent pas !
+              une société plus fraternelle : <br />
+              accueillir le temps d’un repas, tenir le secrétariat, faire la
+              promotion de cette initiative, les possibilités ne manquent pas !
               <br /><br />
               L’idée est portée par l’association Les tables fraternelles,
               sachant que ce nom n’est pas déposé et appartient à toutes les
-              personnes de bonnes volontés. Des tables fraternelles existent
-              déjà, portées généralement dans un cadre communautaire, il s’agit
-              d’élargir le concept. <br /><br />
-              <b>Ouvrons notre table à l’inconnu, créons du lien, semons des
-                graines d’humanité et enrichissons-nous !</b>
+              personnes de bonnes volontés. <br />
+              Des tables fraternelles existent déjà, portées généralement dans
+              un cadre communautaire, il s’agit d’élargir le concept.
+              <br /><br />
+              <b
+                >Ouvrons notre table à l’inconnu, créons du lien, semons des
+                graines d’humanité et enrichissons-nous !</b
+              >
             </p>
           </div>
           <!-- Cards -->
@@ -307,33 +310,74 @@
             <div class="row">
               <div class="col-xxl-4">
                 <div class="card bg-dark text-white">
-                  <img src="img/verre.jpg" class="card-img" alt="verre vide et grande table conviale">
+                  <img
+                    src="img/verre.jpg"
+                    class="card-img"
+                    alt="verre vide et grande table conviale"
+                  />
                   <div class="card-img-overlay">
                     <h5 class="card-title text-">Trouver une table</h5>
-                    <p class="card-text">J'ai besoin de trouver une table près de mon lieu de vie pour prendre un repas en bonne compagnie et en toute simplicité.</p>
-                    <p class="card-text"><b>Consultez la carte des réseaux de tables fraternelles</b><br>ou écrivez-nous</p>
-                    <a href="contact.html" class="btn btn-custom btn-lg">Nous contacter</a>
+                    <p class="card-text">
+                      J'ai besoin de trouver une table près de mon lieu de vie
+                      pour prendre un repas en bonne compagnie et en toute
+                      simplicité.
+                    </p>
+                    <p class="card-text">
+                      <b
+                        >Consultez la carte des réseaux de tables
+                        fraternelles</b
+                      ><br />ou écrivez-nous
+                    </p>
+                    <a href="contact.html" class="btn btn-custom btn-lg"
+                      >Nous contacter</a
+                    >
                   </div>
                 </div>
               </div>
               <div class="col-xxl-4">
                 <div class="card bg-dark text-white">
-                  <img src="img/pain.jpg" class="card-img" alt="morceau de pain partagé">
+                  <img
+                    src="img/pain.jpg"
+                    class="card-img"
+                    alt="morceau de pain partagé"
+                  />
                   <div class="card-img-overlay">
                     <h5 class="card-title text-">Vision</h5>
-                    <p class="card-text">Accueil chez les particuliers pour un repas, dans un esprit de fraternité et de convivialité de personnes seules ou démunies.</p>
-                    <p class="card-text">Un secrétariat téléphonique met en relation les hôtes, personnes accueillantes et personnes accueillies.</p>
+                    <p class="card-text">
+                      Accueil chez les particuliers pour un repas, dans un
+                      esprit de fraternité et de convivialité de personnes
+                      seules ou démunies.
+                    </p>
+                    <p class="card-text">
+                      Un secrétariat téléphonique met en relation les hôtes,
+                      personnes accueillantes et personnes accueillies.
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="col-xxl-4">
                 <div class="card bg-dark text-white">
-                  <img src="img/assiettes.jpg" class="card-img" alt="deux assiettes sur une table">
+                  <img
+                    src="img/assiettes.jpg"
+                    class="card-img"
+                    alt="deux assiettes sur une table"
+                  />
                   <div class="card-img-overlay">
                     <h5 class="card-title text-">Proposer une table</h5>
-                    <p class="card-text">Je souhaite ouvrir ma table pour offrir un repas en bonne compagnie et en toute simplicité.​</p>
-                    <p class="card-text"><b>Consultez la carte des réseaux de tables fraternelles</b><br> ou écrivez-nous</p>
-                    <a href="contact.html" class="btn btn-custom btn-lg">Nous contacter</a>
+                    <p class="card-text">
+                      Je souhaite ouvrir ma table pour offrir un repas en bonne
+                      compagnie et en toute simplicité.​
+                    </p>
+                    <p class="card-text">
+                      <b
+                        >Consultez la carte des réseaux de tables
+                        fraternelles</b
+                      ><br />
+                      ou écrivez-nous
+                    </p>
+                    <a href="contact.html" class="btn btn-custom btn-lg"
+                      >Nous contacter</a
+                    >
                   </div>
                 </div>
               </div>
@@ -351,27 +395,48 @@
               <li class="quick-items"><a href="#">Accueil</a></li>
               <li class="quick-items"><a href="#apropos">A propos</a></li>
               <li class="quick-items"><a href="#sengager">S'engager</a></li>
-              <li class="quick-items"><a href="actualites.html">Actualités</a></li>
-              <li class="quick-items"><a href="contact.html">Nous contacter</a></li>
+              <li class="quick-items">
+                <a href="actualites.html">Actualités</a>
+              </li>
+              <li class="quick-items">
+                <a href="contact.html">Nous contacter</a>
+              </li>
             </ul>
           </div>
           <div class="social-footer">
             <ul class="list-unstyled">
-              <li class="social-items"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-              <li class="social-items"><a href="https://twitter.com/?lang=fr" target="_blank"><i class="fab fa-twitter"></i></a></li>
-              <li class="social-items"><a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li class="social-items">
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li class="social-items">
+                <a href="https://twitter.com/?lang=fr" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="social-items">
+                <a href="https://www.instagram.com/?hl=fr" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
             </ul>
-          </div>  
+          </div>
           <div class="legal-footer">
             <ul class="list-unstyled">
               <li class="legal-items"><a href="#">Mentions légales</a></li>
-              <li class="legal-items"><a href="#">Politique en matière de cookies</a></li>
-              <li class="legal-items"><a href="#">Politique de confidentialité</a></li>
+              <li class="legal-items">
+                <a href="#">Politique en matière de cookies</a>
+              </li>
+              <li class="legal-items">
+                <a href="#">Politique de confidentialité</a>
+              </li>
             </ul>
           </div>
         </div>
         <div class="mb-0 footer-copyright">
-          Les tables Fraternelles &copy; 2021 - Tous droits réservés - réalisé par Eric LEMOINE
+          Les tables Fraternelles &copy; 2021 - Tous droits réservés - réalisé
+          par Eric LEMOINE
         </div>
       </footer>
       <!-- Fin Footer -->

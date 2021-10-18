@@ -45,6 +45,7 @@ header {
   background-position: top;
   height: 800px;
   color: #fff;
+  opacity: 0.9;
 }
 
 header div {
@@ -53,7 +54,7 @@ header div {
   justify-content: center;
   height: 100%;
   align-items: center;
-  background: rgba(49, 47, 47, 0.5);
+  background: rgba(31, 30, 30, 0.63);
 }
 
 .apropos.apropos-main.apropos-text.span-accueil {
@@ -140,6 +141,7 @@ footer {
 .social-footer ul,
 .legal-footer ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -175,6 +177,7 @@ footer {
 .footer-copyright {
   font-size: 15px;
   margin-top: 50px;
+  color: #ec7b7a;
 }
 
 /* Mobile */
@@ -186,7 +189,7 @@ footer {
   }
 
   header div h1 {
-    font-size: 1em;
+    font-size: 90px;
   }
 
 
@@ -210,10 +213,12 @@ footer {
   }
 
   .card-text {
-    font-size: 1em;
+    font-size: 17px;
   }
 
   .card {
     margin-top: 15px;
+    width: auto;
+    overflow: hidden;
   }
 }
