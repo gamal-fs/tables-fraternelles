@@ -136,8 +136,42 @@ header div button.btn-custom:hover {
   text-decoration: underline;
 }
 
-
 /* Footer */
+footer {
+  background-color: #676767;
+  color: white;
+}
+
+.quick-link ul, .social-footer ul, .legal-footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.quick-link a, .social-footer a, .legal-footer a {
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.quick-items a:hover {
+  font-size: 19px;
+  color: #EC7B7A;
+}
+
+.social-items a {
+  font-size: 2.3em;
+  color: #EC7B7A;
+}
+
+.social-items a:hover {
+  font-size: 2.4em;
+  color: #fff;
+}
+
+.footer-copyright {
+  font-size: 15px;
+}
 
 /* Mobile */
   @media screen and (max-width:900px) {
