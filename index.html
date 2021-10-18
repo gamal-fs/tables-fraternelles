@@ -102,6 +102,7 @@
                   src="img/logo.jpg"
                   alt="Logo Tables Fraternelles"
                   class="logo px-4"
+                  id="home"
                 />
               </a>
               <!-- Bouton menu pour écran portables -->
@@ -193,22 +194,22 @@
                 Accueil
               </li>
               <li class="breadcrumb-item">
-                <a href="#apropos" class="text-decoration-none text-dark"
+                <a href="#apropos" class="text-dark"
                   >A propos</a
                 >
               </li>
               <li class="breadcrumb-item">
-                <a href="#sengager" class="text-decoration-none text-dark"
+                <a href="#sengager" class="text-dark"
                   >S'engager</a
                 >
               </li>
               <li class="breadcrumb-item">
-                <a href="#actualites" class="text-decoration-none text-dark"
+                <a href="#actualites" class="text-dark"
                   >Actualités</a
                 >
               </li>
               <li class="breadcrumb-item">
-                <a href="contact.html" class="text-decoration-none text-dark"
+                <a href="contact.html" class="text-dark"
                   >Contact</a
                 >
               </li>
@@ -236,10 +237,41 @@
       <!-- Fin accueil -->
       <!-- A propos -->
       <section id="apropos">
-        <div class="section-header">
+        <div class="section-header mb-0">
           <h2>A propos</h2>
         </div>
-        <div class="section-main container-fluid">
+        <!-- Fil d'Ariane -->
+        <div class="row">
+          <div class="col-12 bg-light">
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb px-2 m-0 bg-light">
+                <li class="breadcrumb-item">
+                  <a href="#home" class="text-dark">Acceuil</a>
+                </li>
+                <li class="breadcrumb-item active">
+                  A propos
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#sengager" class="text-dark"
+                    >S'engager</a
+                  >
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#actualites" class="text-dark"
+                    >Actualités</a
+                  >
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="contact.html" class="text-dark"
+                    >Contact</a
+                  >
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <!-- Fin fil d'Ariane -->
+        <div class="section-main container-fluid mt-3">
           <div class="section-text">
             <p>
               Vous faites peut-être partie de ceux qui ont visionné le
@@ -282,13 +314,40 @@
       <!-- Fin A propos -->
       <!-- S'engager -->
       <section id="sengager">
-        <div class="section-header">
+        <div class="section-header mb-0">
           <h2>S'engager</h2>
         </div>
-        <div class="section-main container-fluid">
-          <div>
-            <!-- ajouter des cards -->
+        <!-- Fil d'Ariane -->
+        <div class="row">
+          <div class="col-12 bg-light">
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb px-2 m-0 bg-light">
+                <li class="breadcrumb-item">
+                  <a href="#home" class="text-dark">Acceuil</a>
+                </li>
+                <li class="breadcrumb-item ">
+                  <a href="#apropos" class="text-dark">A propos</a>
+                </li>
+                </li>
+                <li class="breadcrumb-item active">
+                  S'engager
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#actualites" class="text-dark"
+                    >Actualités</a
+                  >
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="contact.html" class="text-dark"
+                    >Contact</a
+                  >
+                </li>
+              </ol>
+            </nav>
           </div>
+        </div>
+        <!-- Fin fil d'Ariane -->
+        <div class="section-main section-sengager container-fluid mt-3">
           <div class="section-text sengager-text">
             <p>
               Chacun à son niveau et selon ses disponibilités peut contribuer à
@@ -301,12 +360,48 @@
               personnes de bonnes volontés. Des tables fraternelles existent
               déjà, portées généralement dans un cadre communautaire, il s’agit
               d’élargir le concept. <br /><br />
-              <b>
-                Ouvrons notre table à l’inconnu, créons du lien, semons des
-                graines d’humanité et enrichissons-nous !</b
-              >
+              <b>Ouvrons notre table à l’inconnu, créons du lien, semons des
+                graines d’humanité et enrichissons-nous !</b>
             </p>
           </div>
+          <!-- Cards -->
+          <div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                  <img src="img/verre.jpg" class="card-img" alt="verre vide et grande table conviale">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-">Trouver une table</h5>
+                    <p class="card-text">J'ai besoin de trouver une table près de mon lieu de vie pour prendre un repas en bonne compagnie et en toute simplicité.</p>
+                    <p class="card-text"><b>Consultez la carte des réseaux de tables fraternelles</b><br>ou écrivez-nous</p>
+                    <a href="contact.html" class="btn btn-custom btn-lg">Nous contacter</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                  <img src="img/pain.jpg" class="card-img" alt="morceau de pain partagé">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-">Vision</h5>
+                    <p class="card-text">Accueil chez les particuliers pour un repas, dans un esprit de fraternité et de convivialité de personnes seules ou démunies.</p>
+                    <p class="card-text">Un secrétariat téléphonique met en relation les hôtes, personnes accueillantes et personnes accueillies.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                  <img src="img/assiettes.jpg" class="card-img" alt="deux assiettes sur une table">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-">Proposer une table</h5>
+                    <p class="card-text">Je souhaite ouvrir ma table pour offrir un repas en bonne compagnie et en toute simplicité.​</p>
+                    <p class="card-text"><b>Consultez la carte des réseaux de tables fraternelles</b><br> ou écrivez-nous</p>
+                    <a href="contact.html" class="btn btn-custom btn-lg">Nous contacter</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin cards -->
         </div>
       </section>
       <!-- Fin s'engager -->
@@ -317,18 +412,18 @@
         <div>
           <div class="mentions">
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Politique en matière de cookies</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
             </ul>
           </div>
           <div class="social">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="#">Icone Facebook</a></li>
+            <li><a href="#">Icone Twitter</a></li>
+            <li><a href="#">Icone Instagram</a></li>
           </div>
         </div>
-        <p>&copy; copyright elem</p>
+        <p>&copy; 2021 copyright Elem</p>
       </footer>
       <!-- Fin Footer -->
     </main>
