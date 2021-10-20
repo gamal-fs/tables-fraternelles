@@ -86,14 +86,17 @@ header div button.btn-custom:hover {
 /* Actualités */
 .header-actualites {
   background: url("img/news-papers.jpg");
+  filter: grayscale(100%);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 200px;
   background-repeat: no-repeat;
 }
 
 .title-actualites {
   text-align: center;
+  padding-top: 4%;
+  opacity: 0.8;
 }
 
 .title-actualites h1 {
@@ -103,8 +106,11 @@ header div button.btn-custom:hover {
   color: #fff;
 }
 
-.title-actualites p {
+.p-actualites {
   font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px;
+  border-bottom: 2px solid #ec7b7a;
 }
 
 .card-title {
@@ -119,7 +125,30 @@ header div button.btn-custom:hover {
   color: #ec7b7a;
 }
 
+/* contact */
+.header-contact {
+  background: url("img/table.jpg");
+  filter: grayscale(100%);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  background-repeat: no-repeat;
+}
 
+.bg-gray {
+  background: lightgray;
+  border-radius: 5px;
+}
+
+.contact-logo {
+  margin-top: 20vh;
+}
+
+.logo-contact {
+  border-radius: 10px; 
+  width: 300px;
+
+}
 
 /* A propos */
 .section-header {

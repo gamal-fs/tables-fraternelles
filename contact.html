@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Contacter les tables Fraternelles."
-    />
+    <meta name="description" content="Contacter les tables Fraternelles." />
     <title>Les Tables Fraternelles: Contact</title>
     <link
       rel="stylesheet"
@@ -140,10 +137,7 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
-                    <a
-                      href="index.html"
-                      class="nav-link"
-                    >
+                    <a href="index.html" class="nav-link">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="25"
@@ -169,7 +163,12 @@
                     <a href="actualites.html" class="nav-link">Actualités</a>
                   </li>
                   <li class="nav-item">
-                    <a href="contact.html" class="nav-link active" aria-current="page">Nous contacter</a>
+                    <a
+                      href="contact.html"
+                      class="nav-link active"
+                      aria-current="page"
+                      >Nous contacter</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -216,18 +215,182 @@
       </div>
       <!-- Fin fil d'Ariane -->
       <!-- Actualités -->
+      <div class="header-contact">
+        <div class="title-actualites">
+          <h1>Contact - inscription</h1>
+        </div>
+      </div>
+      <p class="text-center p-actualites">
+        Pour tout renseignement ou une demande d'adhésion, <br />
+        merci de remplir le formulaire ci-dessous, <br />
+        nous vous répondrons dans les plus brefs délais.
+      </p>
       <section id="actualites">
-
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-7 col-lg-5">
+              <div class="bg-gray my-3 py-3 px-4">
+                <form>
+                  <div class="form-group mb-3">
+                    <label for="nom"
+                      >Nom<span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nom"
+                      placeholder="Entrez votre nom"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="prenom"
+                      >Prénom<span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="prenom"
+                      placeholder="Entrez votre prénom"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="naissance">Date de naissance</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="naissance"
+                      placeholder="jj/mm/aaaa"
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="phone"
+                      >Mobile<span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      placeholder="06 01 23 45 67"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="email"
+                      >Email<span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="votre@mail.com"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="msg">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="msg"
+                      rows="8"
+                      placeholder="Votre message ici..."
+                    ></textarea>
+                  </div>
+                  <div class="d-flex justify-content-around">
+                    <button
+                      type="reset"
+                      class="btn btn-light form-btn"
+                      role="button"
+                    >
+                      Effacer
+                    </button>
+                    <button type="submit" class="btn btn-custom form-btn">
+                      Envoyer
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 text-center contact-logo">
+              <img
+                class="img-fluid text-center logo-contact"
+                src="img/logo.jpg"
+                alt="logo les Tables Fraternelles"
+              />
+              <ul class="list-unstyled text-center text-lg-start mt-4">
+                <li class="list-unstyled text-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#ec7b7a"
+                    class="contact-icon"
+                    viewbox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                    />
+                  </svg>
+                  <span>8 rue du père Maurice 77210 Avon, France</span>
+                </li>
+                <li class="list-unstyled text-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#ec7b7a"
+                    class="bi bi-telephone-fill"
+                    viewbox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                    />
+                  </svg>
+                  <a
+                    href="tel:0756899710"
+                    class="contact-link text-decoration-none"
+                    >07 56 89 97 10</a
+                  >
+                </li>
+                <li class="list-unstyled text-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#ec7b7a"
+                    class="bi bi-envelope-fill contact-icon"
+                    viewbox="0 0 16 16"
+                  >
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                    />
+                  </svg>
+                  <a
+                    href="mailto:contact@tablesfraternelles.org"
+                    class="contact-link text-decoration-none"
+                    >contact@tablesfraternelles.org</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
-    
+
       <!-- Footer -->
       <footer class="mt-4 pt-4 text-center">
         <div class="mentions-footer">
           <div class="quick-link">
             <ul class="list-unstyled">
               <li class="quick-items"><a href="index.html">Accueil</a></li>
-              <li class="quick-items"><a href="index.html#apropos">A propos</a></li>
-              <li class="quick-items"><a href="index.html#sengager">S'engager</a></li>
+              <li class="quick-items">
+                <a href="index.html#apropos">A propos</a>
+              </li>
+              <li class="quick-items">
+                <a href="index.html#sengager">S'engager</a>
+              </li>
               <li class="quick-items">
                 <a href="actualites.html">Actualités</a>
               </li>
