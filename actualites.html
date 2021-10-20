@@ -179,8 +179,11 @@
             </div>
             <!-- Bouton Newsletter -->
             <div class="container-fluid justify-content-end">
+              <div class="text-white">
+                Ne manquez aucun évènements en vous inscrivant à la
+              </div>
               <button
-                class="btn btn-secondary btn-lg btn-nl"
+                class="btn btn-secondary btn-lg btn-nl mx-2"
                 data-toggle="modal"
                 data-target="#newsletter"
                 type="button"
@@ -218,7 +221,6 @@
       </div>
       <!-- Fin fil d'Ariane -->
       <!-- Actualités -->
-      <!-- Actualités -->
       <div class="header-actualites"></div>
       <div class="title-actualites">
         <h1>
@@ -242,7 +244,7 @@
                   class="card-img-top"
                 />
                 <div class="card-text p-4">
-                  <h5 class="card-title">Course solidaire</h5>
+                  <h5 class="card-title card-rose">Course solidaire</h5>
                   <p class="card-text">
                     Venez participer à la course solidaire en faveur de notre
                     association
@@ -313,13 +315,16 @@
                         progress-bar
                         bg-custom-red
                         progress-bar-striped progress-bar-animated
+                        btn-custom
                       "
                       role="progressbar"
                       aria-valuenow="75"
                       aria-valuemin="0"
                       aria-valuemax="100"
                       style="width: 75%"
-                    ></div>
+                    >
+                      30 participants
+                    </div>
                   </div>
                   <a href="" class="btn btn-custom">Réserver ma place</a>
                 </div>
@@ -338,6 +343,83 @@
                     Profitez de notre brocante pour vider votre maison et en
                     faire profiter les plus nécessiteux !
                   </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-map"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"
+                      />
+                    </svg>
+                    Lieux : Paris
+                  </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-calendar2-check"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                      />
+                      <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"
+                      />
+                      <path
+                        d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"
+                      />
+                    </svg>
+                    Date : le 23 décembre
+                  </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-clock"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                      <path
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                      />
+                    </svg>
+                    Horaire : à partir de 10h00
+                  </p>
+                  <ul class="card-ul">
+                    <li>apporter sa table</li>
+                    <li>penser à vous inscrire auparavent</li>
+                    <li>repas partagé entre tous les participants</li>
+                  </ul>
+                  <div class="progress mb-3">
+                    <div
+                      class="
+                        progress-bar
+                        bg-custom-red
+                        progress-bar-striped progress-bar-animated
+                        btn-custom
+                      "
+                      role="progressbar"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 25%"
+                    >
+                      25 participants
+                    </div>
+                  </div>
                   <a href="" class="btn btn-custom">Réserver ma place</a>
                 </div>
               </div>
@@ -350,11 +432,87 @@
                   class="card-img-top"
                 />
                 <div class="card-text p-4">
-                  <h5 class="card-title">Gala de charité</h5>
+                  <h5 class="card-title card-rose">Gala de charité</h5>
                   <p class="card-text">
                     Organiser par notre association, nous vous invitons à
                     participer à notre Grand Galas Annuel.
                   </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-map"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"
+                      />
+                    </svg>
+                    Lieux : Rambouillet
+                  </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-calendar2-check"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                      />
+                      <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"
+                      />
+                      <path
+                        d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"
+                      />
+                    </svg>
+                    Date : le 31 décembre
+                  </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-clock"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                      <path
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                      />
+                    </svg>
+                    Horaire : à partir de 16h00
+                  </p>
+                  <ul class="card-ul text-small">
+                    <li>dress code à respecter</li>
+                    <li>penser à vous inscrire</li>
+                  </ul>
+                  <div class="progress mb-3">
+                    <div
+                      class="
+                        progress-bar
+                        bg-custom-red
+                        progress-bar-striped progress-bar-animated
+                        btn-custom
+                      "
+                      role="progressbar"
+                      aria-valuenow="45"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 45%"
+                    >
+                      45 participants
+                    </div>
+                  </div>
                   <a href="" class="btn btn-custom">Réserver ma place</a>
                 </div>
               </div>
@@ -372,6 +530,83 @@
                     Kermesse solidaire - venez nombreux et gagnez un de nos
                     nombreux lots.
                   </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-map"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"
+                      />
+                    </svg>
+                    Lieux : Le Chesnay
+                  </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-calendar2-check"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                      />
+                      <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"
+                      />
+                      <path
+                        d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"
+                      />
+                    </svg>
+                    Date : le 2 décembre
+                  </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-clock"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                      <path
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                      />
+                    </svg>
+                    Horaire : à partir de 11h00
+                  </p>
+                  <ul class="card-ul text-small">
+                    <li>pass sanitaire obligatoire</li>
+                    <li>places limitées</li>
+                    <li>réservez votre repas</li>
+                  </ul>
+                  <div class="progress mb-3">
+                    <div
+                      class="
+                        progress-bar
+                        bg-custom-red
+                        progress-bar-striped progress-bar-animated
+                        btn-custom
+                      "
+                      role="progressbar"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 70%"
+                    >
+                      70 participants
+                    </div>
+                  </div>
                   <a href="" class="btn btn-custom">Réserver ma place</a>
                 </div>
               </div>

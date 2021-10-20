@@ -115,6 +115,11 @@ header div button.btn-custom:hover {
   color: gray;
 }
 
+.card-rose {
+  color: #ec7b7a;
+}
+
+
 
 /* A propos */
 .section-header {
